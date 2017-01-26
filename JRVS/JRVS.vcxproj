@@ -110,6 +110,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\JRVS.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="TODO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="testFile.jrvs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\JRVS.h" />
+    <ClInclude Include="src\special\AArray.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -8,7 +8,6 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-#if 0 // So i can test new files im writing with ease
 	int MODE = 1; // 0 for Command Line, 1 for cin
 	string File; // main.jrvs Location
 
@@ -42,13 +41,6 @@ int main(int argc, char *argv[]) {
 			cout << "File Processed, Quitting...." << endl;
 		}
 	}
-#else // Test Code Here:
-
-
-
-
-
-#endif
 
 	char x; x = _getch();
 	return 0;

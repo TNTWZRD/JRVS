@@ -16,6 +16,9 @@
     <Filter Include="Source Files\src">
       <UniqueIdentifier>{a7d8bc0e-bc94-4b8e-aa2d-44fcb8518517}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\src\special">
+      <UniqueIdentifier>{f2d159b8-758e-4568-ad52-84b0eb2c4dad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -27,6 +30,12 @@
     <ClCompile Include="src\JRVS.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>
+    <ClCompile Include="src\JRVSlex.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\JRVSparse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="testFile.jrvs">
@@ -37,8 +46,14 @@
     <ClInclude Include="src\JRVS.h">
       <Filter>Source Files\src</Filter>
     </ClInclude>
+    <ClInclude Include="src\JRVSlex.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
     <ClInclude Include="src\special\AArray.h">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files\src\special</Filter>
+    </ClInclude>
+    <ClInclude Include="src\JRVSparse.h">
+      <Filter>Source Files\src</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

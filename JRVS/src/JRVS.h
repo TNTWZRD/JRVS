@@ -3,14 +3,16 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <vector>
+
+#include "JRVSlex.h"
 
 using namespace std;
 
 class JRVS {
 private:
 	string FILENAME;
-
+	fstream File;
+	string CONTENTS;
 public:
 	JRVS(string file);
 

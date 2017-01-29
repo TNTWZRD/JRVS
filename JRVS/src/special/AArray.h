@@ -16,7 +16,8 @@ public:
 	long Size() { return stack.size(); }
 
 	bool IsItem(string name) {
-		for (int i = 0; i < Size(); i++)
+//		for (int i = 0; i < Size(); i++)
+		for(int i: Size())
 			if (stack[i].name == name)
 				return true;
 	}
@@ -32,7 +33,8 @@ public:
 	}
 	
 	T& operator [] (string name) {
-		for (int i = 0; i < Size(); i++)
+//		for (int i = 0; i < Size(); i++)
+		for (int i : Size())
 			if (stack[i].name == name)
 				return stack[i].data;
 		long idx = Size();
@@ -45,7 +47,8 @@ public:
 	string GetItemName(long index) {
 		if (index < 0)
 			index = 0;
-		for (int i = 0; i < Size(); i++)
+//		for (int i = 0; i < Size(); i++)
+		for (int i : Size())
 			if (i == index)
 				return stack[i].name;
 		return "";

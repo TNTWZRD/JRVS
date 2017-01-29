@@ -124,6 +124,8 @@
     <ClInclude Include="src\JRVSlex.h" />
     <ClInclude Include="src\JRVS.h" />
     <ClInclude Include="src\special\AArray.h" />
+    <ClInclude Include="src\types\GenericDataType.h" />
+    <ClInclude Include="src\types\TypeTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

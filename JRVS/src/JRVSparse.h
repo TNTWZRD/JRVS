@@ -9,6 +9,6 @@ using namespace std;
 
 class JRVSparse{
 public:
-	JRVSlex();
+	JRVSparse();
 };
 

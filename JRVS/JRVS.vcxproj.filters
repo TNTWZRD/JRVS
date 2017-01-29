@@ -19,6 +19,9 @@
     <Filter Include="Source Files\src\special">
       <UniqueIdentifier>{f2d159b8-758e-4568-ad52-84b0eb2c4dad}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\src\Data Types">
+      <UniqueIdentifier>{31677789-7d72-41a8-8b47-5f4041fe5f67}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -54,6 +57,12 @@
     </ClInclude>
     <ClInclude Include="src\JRVSparse.h">
       <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\types\GenericDataType.h">
+      <Filter>Source Files\src\Data Types</Filter>
+    </ClInclude>
+    <ClInclude Include="src\types\TypeTree.h">
+      <Filter>Source Files\src\Data Types</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

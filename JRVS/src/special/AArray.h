@@ -62,4 +62,16 @@ public:
 		return stack[0].data;
 	}
 
+	friend ostream &operator << (ostream& os, AArray &t) {
+		os << "[ ";
+		for (int i = 0; i < t.Size(); i++) {
+			if (i < t.Size()-1) 
+				os << t.GetItemName(i) << ":\"" << t[i] << "\", ";
+			else
+				os << t.GetItemName(i) << ":\"" << t[i] << "\"";
+		}
+		os << " ];" << endl;
+		return os;
+	}
+
 };

@@ -19,13 +19,19 @@ JRVS::JRVS(string file){
 		CONTENTS += c;
 	File.close();
 	Lex();
-#if 0
+	Parse();
+
+	variables["test"] = "derp";
+	variables["test2"] = "derp2";
+	variables["test1"] = "derp3";
+
+#if 1
 	for each (string val in tokens)	{
 		cout << val << endl;
 	}
+	cout << variables << endl;
 #endif
 
-	Parse();
 }
 
 

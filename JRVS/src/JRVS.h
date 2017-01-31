@@ -4,6 +4,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <array>
 
 #include "special\AArray.h"
 
@@ -15,6 +16,10 @@ private:
 	string FILENAME;
 	fstream File;
 	string CONTENTS;
+
+	const array<string, 2> AllowedKeywords = {
+		"PRINT", "print"
+	};
 
 	vector<string> tokens;
 	AArray<string> variables;

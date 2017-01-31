@@ -9,7 +9,6 @@ string JRVS::parseStringOBJ(string symbol) {
 	return symbol;
 }
 
-
 // Constructor
 JRVS::JRVS(string file){
 	// INIT
@@ -37,6 +36,17 @@ void JRVS::Lex() {
 
 	for (int i = 0; i < CONTENTS.length() + 1; i++){
 		tok += CONTENTS[i];
+		int keyword = -1;
+
+		for (int j = 0; j < AllowedKeywords.size(); j++) {
+			if (tok == AllowedKeywords[j]) {
+				keyword = j;
+				if (j % 2 == 1)
+					keyword -= 1;
+				break;
+			}
+
+		}
 
 		if (tok == " " && !stringOpen) { // SPACE
 			tok = "";
@@ -47,9 +57,10 @@ void JRVS::Lex() {
 		else if (tok == "\t" && !stringOpen) { // TAB
 			tok = "";
 		}
-		// Print Statement
-		else if (tok == "PRINT" || tok == "print" && !stringOpen) { // PRINT Command
-			tokens.push_back("PRINT");
+		// Known Keywords:
+		else if (keyword != -1 && !stringOpen) {
+			tokens.push_back(AllowedKeywords[keyword]);
+			keyword = -1;
 			tok = "";
 		}
 		// String Parse:

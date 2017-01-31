@@ -110,18 +110,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\JRVSparse.cpp" />
-    <ClCompile Include="src\JRVSlex.cpp" />
     <ClCompile Include="src\JRVS.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="TODO" />
   </ItemGroup>
   <ItemGroup>
     <None Include="testFile.jrvs" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\JRVSparse.h" />
-    <ClInclude Include="src\JRVSlex.h" />
     <ClInclude Include="src\JRVS.h" />
     <ClInclude Include="src\special\AArray.h" />
   </ItemGroup>

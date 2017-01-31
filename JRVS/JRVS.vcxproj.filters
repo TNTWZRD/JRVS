@@ -24,17 +24,8 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TODO">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\JRVS.cpp">
       <Filter>Source Files\src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\JRVSlex.cpp">
-      <Filter>Source Files\src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\JRVSparse.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -46,14 +37,8 @@
     <ClInclude Include="src\JRVS.h">
       <Filter>Source Files\src</Filter>
     </ClInclude>
-    <ClInclude Include="src\JRVSlex.h">
-      <Filter>Source Files\src</Filter>
-    </ClInclude>
     <ClInclude Include="src\special\AArray.h">
       <Filter>Source Files\src\special</Filter>
-    </ClInclude>
-    <ClInclude Include="src\JRVSparse.h">
-      <Filter>Source Files\src</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

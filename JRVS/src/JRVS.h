@@ -3,8 +3,10 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
 
-#include "JRVSlex.h"
+#include "special\AArray.h"
+
 
 using namespace std;
 
@@ -13,8 +15,13 @@ private:
 	string FILENAME;
 	fstream File;
 	string CONTENTS;
+
+	vector<string> tokens;
+	AArray<string> variables;
 public:
 	JRVS(string file);
 
+	void Lex();
+	void Parse();
 };
 

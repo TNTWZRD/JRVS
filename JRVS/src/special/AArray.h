@@ -3,6 +3,8 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 template <class T>
 class AArray {
 private:
@@ -10,7 +12,7 @@ private:
 		T data;
 		string name;
 	} Data;
-	VECTOR<Data> stack;
+	vector<Data> stack;
 
 public:
 	long Size() { return stack.size(); }

@@ -2,7 +2,7 @@
 
 // WORKER FUNCTIONS::
 
-string parseStringOBJ(string symbol) {
+string JRVS::parseStringOBJ(string symbol) {
 	// SYMBOL = STRING:"RANDOMCHARS"
 	symbol = symbol.substr(8); // Remove STRING:"
 	symbol = symbol.substr(0, symbol.length() - 1); // REMOVE TRAILING "

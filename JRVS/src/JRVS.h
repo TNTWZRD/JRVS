@@ -20,8 +20,12 @@ private:
 	AArray<string> variables;
 public:
 	JRVS(string file);
-
+private:
 	void Lex();
 	void Parse();
+
+
+	string parseStringOBJ(string symbol);
+
 };
 
